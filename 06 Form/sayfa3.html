@@ -5,8 +5,7 @@
    <meta charset="UTF-8">
    <title>İş Başvuru Formu</title>
    <script>
-      function okudum()
-      {
+      function okudum() {
          alert("Okudum... Anladım...");
          document.getElementById("tamam").disabled = false;
       }
@@ -55,9 +54,9 @@
          <p>
             <label for="ilce">İlçe</label><br>
             <input list="ilceler">
-            <datalist id="ilceler">          
+            <datalist id="ilceler">
                <option value="Kadıköy">Kadıköy (İstanbul)</option>
-               <option value="Pendik">Pendik (İstanbul)</option>              
+               <option value="Pendik">Pendik (İstanbul)</option>
                <option value="Çankaya">Çankaya (Ankara)</option>
                <option value="Keçiören">Keçiören (Ankara)</option>
             </datalist>
@@ -83,7 +82,7 @@
          </p>
          <p>
             <label for="seviye">Yabancı dil seviyesi</label><br>
-            <input type="range" name="seviye" id="seviye" min="0" max="10" value="5">
+            <input type="range" name="seviye" id="seviye" min="0" max="10" value="4" step="2">
          </p>
       </fieldset>
       <fieldset>
@@ -110,9 +109,9 @@
          <input type="hidden" name="referansno" id="refereansno" value="ref101">
          <input type="button" value="Okudum Anladım" onclick="okudum()">
          <input type="submit" value="Tamam" id="tamam" disabled="on">
-         <input type="reset" value="Temizle"> 
+         <input type="reset" value="Temizle">
       </p>
-      
+
    </form>
 </body>
 
