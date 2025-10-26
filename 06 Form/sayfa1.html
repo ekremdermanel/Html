@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body>
-    <h1>Giriş</h1>
-    <form method="post">
-      <p>
-        <label for="kullanici">Kullanıcı adı</label>
-        <input type="text" name="kullanici" id="kullanici" />
-      </p>
-      <p>
-        <label for="sifre">Şifre</label>
-        <input type="password" name="sifre" id="sifre" />
-      </p>
-      <p>
-        <input type="submit" value="Tamam" />
-      </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form örneği</h1>
+    <form action="gonder.html" method="post">
+        <p>
+            <label for="ad">Ad</label>  <input type="text" name="ad" id="ad">
+        </p> 
+        <p>
+            <label for="soyad">Soyad</label>  <input type="text" name="soyad" id="soyad">
+        </p>
+        <p>
+            <input type="submit" value="Gönder">
+        </p>
     </form>
-  </body>
+</body>
 </html>

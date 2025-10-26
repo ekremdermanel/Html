@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablo</title>
+    <title>Sınav Notları</title>
 </head>
 <body>
-    <h1>Sınıf Listesi</h1>
+
     <table border="1">
-        <tr>
-            <td>Sınıf</td>
-            <td>Numara</td>
-            <td>Ad</td>
-            <td>Soyad</td>
-        </tr>
-        <tr>
-            <td rowspan="2">10A</td>
-            <td>100</td>
-            <td>Ali</td>
-            <td>Sarı</td>
-        </tr>
-        <tr>
-            <td>200</td>
-            <td>Ayşe</td>
-            <td>Kara</td>
-        </tr>
-        <tr>
-            <td>10B</td>
-            <td>300</td>
-            <td>Mehmet</td>
-            <td>Mor</td>
-        </tr>
+        <caption>Yazılı Notları</caption>
+        <thead>
+            <tr>
+                <th>Numara</th>
+                <th>Ad Soyad</th>
+                <th>Notu</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td>100</td>
+                <td>Ali Sarı</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Ayşe Kara</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>Halil Mor</td>
+                <td>60</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Ortalama</td>
+                <td>50</td>
+            </tr>
+        </tfoot>
     </table>
+    
 </body>
 </html>

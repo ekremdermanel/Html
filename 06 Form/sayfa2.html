@@ -1,72 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body>
-    <form action="kaydet.html" method="get">
-      <fieldset>
-        <legend>Kişisel Bilgiler</legend>
-        <p>
-          <label for="ad">Ad</label><br />
-          <input type="text" name="ad" id="ad" value="Adınız" />
-        </p>
-        <p>
-          <label for="soyad">Soyad</label><br />
-          <input type="text" name="soyad" id="soyad" placeholder="Soyadınız" />
-        </p>
-        <p>
-          Cinsiyet <br />
-          <input type="radio" name="cinsiyet" id="erkek" value="erkek" checked />
-          <label for="erkek">Erkek</label>
-
-          <input type="radio" name="cinsiyet" id="kadin" value="kadin" />
-          <label for="kadin">Kadın</label>
-        </p>
-        <p>
-          Hobiler <br />
-          <input type="checkbox" name="kitap" id="kitap" checked />
-          <label for="kitap">Kitap</label>
-
-          <input type="checkbox" name="muzik" id="muzik" />
-          <label for="muzik">Müzik</label>
-
-          <input type="checkbox" name="spor" id="spor" />
-          <label for="spor">Spor</label>
-        </p>
-      </fieldset>
-      <fieldset>
-        <legend>Diğer Bilgiler</legend>
-        <p>
-          <label for="il">İl</label>
-          <select name="il" id="il">
-            <option value="34">İstanbul</option>
-            <option value="06" selected>Ankara</option>
-            <option value="35">İzmir</option>
-          </select>
-        </p>
-        <p>
-          <label for="ilce">İlçe</label>
-          <input list="ilce_listesi" name="ilce" id="ilce" />
-          <datalist id="ilce_listesi">
-            <option>Kartal</option>
-            <option>Pendik</option>
-            <option>Karşıyaka</option>
-            <option>Kızılay</option>
-          </datalist>
-        </p>
-        <p>
-          <textarea name="aciklama" id="aciklama" cols="30" rows="10">Benim hakkımda</textarea>
-        </p>
-      </fieldset>
-      <p>
-        <input type="submit" value="Tamam" />
-        <input type="reset" value="Temizle" />
-        <input type="button" value="Uyarı" onclick="alert('Uyarıyı aldın')" />
-      </p>
-    </form>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <p>
+        <label for="metin">Metin</label>
+        <input type="text" name="metin" id="metin">
+    </p>
+    <p>
+        <label for="sifre">Şifre</label>
+        <input type="password" name="sifre" id="sifre">
+    </p>
+    <p>
+        <label for="onay">Onay</label>
+        <input type="checkbox" name="onay" id="onay" checked>
+    </p>
+    <p>
+        <input type="checkbox" name="onay1" id="onay1">
+        <label for="onay1">Onay 1</label>
+        <input type="checkbox" name="onay2" id="onay2">
+        <label for="onay2">Onay 2</label>
+        <input type="checkbox" name="onay3" id="onay3">
+        <label for="onay3">Onay 1</label>
+    </p>
+    <p>
+        <input type="radio" name="secenek" id="secenek1" checked>
+        <label for="secenek1">Seçenek 1</label>
+        <input type="radio" name="secenek" id="secenek2">
+        <label for="secenek2">Seçenek 2</label>
+        <input type="radio" name="secenek" id="secenek3">
+        <label for="secenek3">Seçenek 1</label>
+    </p>
+    <p>
+        <label for="dosya">Dosya</label>
+        <input type="file" name="dosya" id="dosya" accept=".doc,.docx">
+    </p>
+</body>
 </html>
